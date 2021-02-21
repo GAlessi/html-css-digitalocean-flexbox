@@ -36,7 +36,7 @@ nav{
 }
 
 .navbar{
-    height: 60px;
+    height: 80px;
 }
 
 nav .logo > img{
@@ -66,4 +66,39 @@ nav .logo > img{
     .hamburger{
         display: block;
     }
+}
+
+/* JUMBOTRON */
+
+.jumbotron{
+    height: 500px;
+    background-image: url(../img/jumbo.svg);
+    background-size: contain;
+}
+
+.jumbotron .container{
+    height: 100%;
+}
+
+.testo_jumbo{
+    color: white;
+    flex-basis: 60%;
+    background-color: yellow;
+}
+
+.form_jumbo{
+    height: 200px;
+    flex-basis: 30%;
+    background-color: white;
+}
+
+@media all and (max-width: 768px) {
+    .jumbotron .container{
+        flex-wrap: wrap;
+    }
+
+    .testo_jumbo, .form_jumbo{
+    flex-basis: 100%;
+    }
+
 }
