@@ -1,0 +1,69 @@
+
+/* Regole generali pagina */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.centratura{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Regole Nav */
+nav{
+    background-color: grey;
+}
+
+.navbar{
+    height: 60px;
+}
+
+nav .logo > img{
+    width: 200px;
+}
+
+.navbar li{
+    display: inline-block;
+    margin: 0 3px;
+    font-size: 15px;
+}
+
+.hamburger{
+    display: none;
+    font-size: 20px;
+}
+
+@media all and (max-width: 991px) {
+    .centratura{
+        width: 95%;
+    }
+
+    .dropdown_vanish{
+        display: none;
+    }
+
+    .hamburger{
+        display: block;
+    }
+}
